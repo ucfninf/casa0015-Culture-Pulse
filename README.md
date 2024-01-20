@@ -18,4 +18,4 @@ CulturalPulse is a unique mobile application designed to immerse users in a dive
 
 ## Installation
 
-Download the app on [Google Play](link-to-google-play) or [App Store](link-to-app-store).
+Download the app on App store :)
