@@ -18,6 +18,7 @@ CulturalPulse is a unique mobile application designed to immerse users in a dive
 
 - **Language Learning:** Immerse yourself in the linguistic diversity of heritage by accessing resources to learn traditional dialects and ancient languages.
 
-## Installation
+## Steps to Installing the App
+upload APK
 
 Download the app on App store :)
