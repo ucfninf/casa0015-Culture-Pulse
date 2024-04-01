@@ -15,7 +15,13 @@ which detects popular natural and human-made structures within an image.
 - Interactive Experiences: Engage in interactive workshops, tutorials, and virtual experiences to learn and participate in traditional practices.
 
 - Cultural Mapping: Explore the geographical diversity of cultural heritage with our interactive map, guiding you to local events, festivals, and heritage sites.
-- 
+
+  API Adptation:
+  MapBOX: https://pub.dev/packages/mapbox_maps_flutter  SDK (Access the limit for location adaptation) for flutter, Adapting camera
+
+  UNESCO Culture Heritage:
+
+  Weather:
 
 
 ## Steps to Installing the App
