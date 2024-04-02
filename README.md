@@ -8,15 +8,21 @@ CulturalPulse is a unique mobile application designed to immerse users in a dive
 
 ## Key Features
 
-- **Heritage Showcase:** Dive into the rich tapestry of intangible cultural heritage through multimedia presentations, including videos, images, and stories.
+- landmark Showcase: Dive into the rich tapestry of intangible cultural heritage through multimedia presentations, including videos, images, and stories.
+ ( by adapting google landmark detection API: https://cloud.google.com/vision/docs/detecting-landmarks
+which detects popular natural and human-made structures within an image.
   
-- **Interactive Experiences:** Engage in interactive workshops, tutorials, and virtual experiences to learn and participate in traditional practices.
+- Interactive Experiences: Engage in interactive workshops, tutorials, and virtual experiences to learn and participate in traditional practices.
 
-- **Cultural Mapping:** Explore the geographical diversity of cultural heritage with our interactive map, guiding you to local events, festivals, and heritage sites.
+- Cultural Mapping: Explore the geographical diversity of cultural heritage with our interactive map, guiding you to local events, festivals, and heritage sites.
 
-- **Community Hub:** Connect with like-minded individuals, share your cultural experiences, and participate in discussions to foster a global community passionate about cultural preservation.
+  API Adptation:
+  MapBOX: https://pub.dev/packages/mapbox_maps_flutter  SDK (Access the limit for location adaptation) for flutter, Adapting camera
 
-- **Language Learning:** Immerse yourself in the linguistic diversity of heritage by accessing resources to learn traditional dialects and ancient languages.
+  UNESCO Culture Heritage:
+
+  Weather:
+
 
 ## Steps to Installing the App
 upload APK
