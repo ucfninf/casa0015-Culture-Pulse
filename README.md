@@ -18,13 +18,12 @@ which detects popular natural and human-made structures within an image.
 
   API Adptation:
   MapBOX: https://pub.dev/packages/mapbox_maps_flutter  SDK (Access the limit for location adaptation) for flutter, Adapting camera
+  Google Map API Key
 
   UNESCO Culture Heritage:
-
-  Weather:
-
+  https://unesco.org.uk/world-heritage-sites/
+  https://whc.unesco.org/en/syndication  
 
 ## Steps to Installing the App
-upload APK
+upload APK to android device.
 
-Download the app on App store :)
