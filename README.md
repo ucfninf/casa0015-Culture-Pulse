@@ -17,8 +17,14 @@ which detects popular natural and human-made structures within an image.
 - Cultural Mapping: Explore the geographical diversity of cultural heritage with our interactive map, guiding you to local events, festivals, and heritage sites.
 
   API Adptation:
-  MapBOX: https://pub.dev/packages/mapbox_maps_flutter  SDK (Access the limit for location adaptation) for flutter, 
-  OR Google Map API Key
+  MAP Navigation:
+ -  MapBOX: https://pub.dev/packages/mapbox_maps_flutter  SDK (Access the limit for location adaptation) for flutter, 
+  OR
+ -  Google Map API Key
+
+Weather API:
+http://tianqiapi.com/index/doc 
+
 
   UNESCO Culture Heritage:
   https://unesco.org.uk/world-heritage-sites/
