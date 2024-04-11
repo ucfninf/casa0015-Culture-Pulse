@@ -33,6 +33,10 @@ http://tianqiapi.com/index/doc
 ## Steps to Installing the App
 upload ADK to android device.
 
-Reference:
+### Reference:
+
 Tuturial for how to connect Android studio to a real Andoid phone: https://www.bilibili.com/video/BV1oK4y1r7zo/?spm_id_from=333.337.search-card.all.click&vd_source=b1f1c409abffad682ea8b3511998f212 
+
+How to Hot Reload on VS code: https://docs.flutter.dev/tools/vs-code
+
 
