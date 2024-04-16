@@ -160,7 +160,8 @@ class _MyCollectionPageState extends State<MyCollectionPage> {
                         },
                         child: const Text(
                           'View Details',
-                          // style: style,
+                          
+                          // style
                         ),
                       ),
                     ),
