@@ -56,22 +56,22 @@ class _MyPageState extends State<MyPage> {
             const SizedBox(
               height: 10,
             ),
-            _everyJumpColumn('Clear cache', () {
+            _everyJumpColumn('Restore original setting', () {
               showToast(
-                  'Clear cache success，all data has been restored to the original state');
+                  'Restored to original settings，all data has been restored to the original state');
               setState(() {
                 SpUtil.putInt(Cache.mainColorCache, Cache.mainColor.value);
                 SpUtil.putObjectList(Cache.myCollectionScenicList, []);
               });
             }),
             const SizedBox(
-              height: 5,
+              height: 3,
             ),
             _everyJumpColumn('Change  color scheme', () {
               showSelectColor();
             }),
             const SizedBox(
-              height: 5,
+              height: 8,
             ),
             _everyJumpColumn('My collection', () {
               /// Jump to my collection page
@@ -114,8 +114,8 @@ class _MyPageState extends State<MyPage> {
                             borderRadius: BorderRadius.circular(34),
                             child: Image.asset(
                               'assets/image/avatar.jpg',
-                              width: 60,
-                              height: 60,
+                              width: 80,
+                              height: 80,
                             )),
                         Container(
                           margin: const EdgeInsets.only(left: 12),
@@ -136,7 +136,7 @@ class _MyPageState extends State<MyPage> {
                                 child: const Text(
                                   'UserName',
                                   style: TextStyle(
-                                    fontSize: 14,
+                                    fontSize: 18,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
