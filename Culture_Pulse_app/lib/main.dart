@@ -1,76 +1,122 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:oktoast/oktoast.dart';
+import 'package:sp_util/sp_util.dart';
+import 'package:google_maps_flutter_android/google_maps_flutter_android.dart';
+import 'package:google_maps_flutter_platform_interface/google_maps_flutter_platform_interface.dart';
 
-void main() => runApp(new MyApp());
 
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
 
-class MyApp extends StatelessWidget {
+  /// Initialized Splash Page
+  await SpUtil.getInstance();
+  if (SpUtil.getInt(Cache.mainColorCache) == 0) {
+    SpUtil.putInt(Cache.mainColorCache, Cache.mainColor.value);
+  }
+  await initializeMapRenderer();
+  runApp(const MyApp());
+}
+
+Completer<AndroidMapRenderer?>? _initializedRendererCompleter;
+
+bool _init = false;
+
+/// Initializes map renderer to the `latest` renderer type for Android platform.
+///
+/// The renderer must be requested before creating GoogleMap instances,
+/// as the renderer can be initialized only once per application context.
+Future<AndroidMapRenderer?> initializeMapRenderer() async {
+  if (!_init) {
+    if (_initializedRendererCompleter != null) {
+      return _initializedRendererCompleter!.future;
+    }
+
+    final Completer<AndroidMapRenderer?> completer =
+        Completer<AndroidMapRenderer?>();
+    _initializedRendererCompleter = completer;
+
+    final GoogleMapsFlutterPlatform mapsImplementation =
+        GoogleMapsFlutterPlatform.instance;
+    if (mapsImplementation is GoogleMapsFlutterAndroid) {
+      unawaited(mapsImplementation
+          .initializeWithRenderer(AndroidMapRenderer.latest)
+          .then((AndroidMapRenderer initializedRenderer) =>
+              completer.complete(initializedRenderer)));
+    } else {
+      completer.complete(null);
+    }
+    _init = true;
+    return completer.future;
+  }
+  return null;
+}
+
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    
-    return new MaterialApp(
-      theme:ThemeData(useMaterial3: false),
-      home:  RandomWords(),                 // ... this line.
+    return const OKToast(
+      backgroundColor: Colors.black54,
+      textPadding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
+      radius: 20.0,
+      child: MaterialApp(
+        title: '',
+        home: DefaultTextStyle(
+          style: TextStyle(color: Colors.black, fontSize: 14),
+          child: Scaffold(
+            body: SplashPage(),
+          ),
+        ),
+      ),
     );
-    
   }
 }
 
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
 
-class RandomWords extends StatefulWidget {
   @override
-  RandomWordsState createState() => new RandomWordsState();
+  State<MyHomePage> createState() => _MyHomePageState();
 }
 
-
-class RandomWordsState extends State<RandomWords> {
-  // Add the next two lines.
-  final List<WordPair> _suggestions = <WordPair>[];
-  final TextStyle _biggerFont = const TextStyle(fontSize: 18.0); 
-
-
- @override
+class _MyHomePageState extends State<MyHomePage> {
+  @override
   Widget build(BuildContext context) {
-    //final wordPair = new WordPair.random(); // Delete these... 
-    //return new Text(wordPair.asPascalCase); // ... two lines.
-    return new Scaffold (                   // Add from here... 
-      appBar: new AppBar(
-        title: new Text('Startup Name Generator'),
-      ),
-      body: _buildSuggestions(),
-    );                                      // ... to here.
-  }
-   
-
-  Widget _buildSuggestions() {
-      return new ListView.builder(
-        padding: const EdgeInsets.all(16.0),
-        itemBuilder: (BuildContext _context, int i) {
-
-        if (i.isOdd) {
-            return new Divider();
-          }
-
-          final int index = i ~/ 2;
-          if (index >= _suggestions.length) {
-
-        _suggestions.addAll(generateWordPairs().take(10));
-          }
-        
-          return _buildRow(_suggestions[index]);
-        }
-      );
-  }
-
-   Widget _buildRow(WordPair pair) {
-    return new ListTile(
-      title: new Text(
-        pair.asPascalCase,
-        style: _biggerFont,
+    return OKToast(
+      backgroundColor: Colors.black54,
+      textPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
+      radius: 20.0,
+      child: MaterialApp(
+        title: '',
+        home: DefaultTextStyle(
+          style: const TextStyle(color: Colors.black, fontSize: 14),
+          // child: Taber(),
+          child: Scaffold(
+            body: GoogleMap(
+              initialCameraPosition: const CameraPosition(
+                /// This should be modified to the longitude and latitude of the current location
+                target: LatLng(-33.86, 151.20),
+                zoom: 11.0,
+              ),
+              markers: {
+                const Marker(
+                  markerId: MarkerId('Sydney'),
+                  position: LatLng(-33.86, 151.20),
+                ),
+              },
+            ),
+          ),
+        ),
       ),
     );
-
-    
   }
-                                        
 }
