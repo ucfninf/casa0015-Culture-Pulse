@@ -4,6 +4,8 @@
 
 CulturalPulse is a unique mobile application designed to immerse users in a diverse world of intangible cultural heritage. Our platform aims to bridge the gap between tradition and technology, offering a comprehensive exploration of various cultural practices, rituals, and crafts from around the globe.
 
+Functionality:This app provides a detailed attraction information display interface by integrating multiple functions (such as weather query, collection, navigation). It makes good use of Flutter's state management, network request, and navigation system, while obtaining data through external APIs to enhance the user experience.
+
 ![屏幕截图 2024-02-05 234032](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/0eb05043-34bc-4ad8-9e3b-eda64ffea72f)
 
 ## Key Features
