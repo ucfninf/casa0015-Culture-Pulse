@@ -41,6 +41,13 @@ class _HomeState extends State<Taber> {
     setState(() {});
   }
 
+  void initData() {
+    _pageList = [
+      const MapPage(),
+      MyPage(refreshData: refreshData),
+    ];
+  }
+
   List<BottomNavigationBarItem> _buildBottomNavigationBarItem(
       Color selectedColor) {
     List<List<Widget>> tabImages = [
