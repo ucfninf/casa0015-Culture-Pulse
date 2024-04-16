@@ -4,6 +4,8 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:culture_pulse_app/cache.dart';
 import 'package:culture_pulse_app/custom_database/database.dart';
 import 'package:culture_pulse_app/model/every_scenic_entity.dart';
+import 'package:sp_util/sp_util.dart';
+
 //use StatefulWidget pattern to manage the state 
 //of markers on the map and the user's current location.
 
