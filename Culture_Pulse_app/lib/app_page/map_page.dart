@@ -5,6 +5,7 @@ import 'package:culture_pulse_app/cache.dart';
 import 'package:culture_pulse_app/custom_database/database.dart';
 import 'package:culture_pulse_app/model/every_scenic_entity.dart';
 import 'package:culture_pulse_app/app_page/map_detail.dart';
+import 'package:culture_pulse_app/widget/serach_widget.dart';
 import 'package:sp_util/sp_util.dart';
 
 class MapPage extends StatefulWidget {
