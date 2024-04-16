@@ -87,7 +87,8 @@ class _SplashPageState extends State<SplashPage> {
     super.dispose();
   }
 
-
+void _goTabber() {
+    Navigator.push(context, MaterialPageRoute(builder: (_) => const Taber()));
   }
 
   @override
@@ -100,3 +101,4 @@ class _SplashPageState extends State<SplashPage> {
       ),
     );
   }
+}
