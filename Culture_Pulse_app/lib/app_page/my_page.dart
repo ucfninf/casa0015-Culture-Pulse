@@ -31,7 +31,7 @@ class _MyPageState extends State<MyPage> {
         child: Column(
           children: [
             Container(
-              height: 200,
+              height: 280, //adjust yellow background here
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
@@ -54,7 +54,7 @@ class _MyPageState extends State<MyPage> {
               child: _buildTopPersonalBasicInfo(),
             ),
             const SizedBox(
-              height: 65,
+              height: 40, //adjust white first gap on homepage here
             ),
             _everyJumpColumn('Restore original setting', () {
               showToast(
@@ -65,13 +65,13 @@ class _MyPageState extends State<MyPage> {
               });
             }),
             const SizedBox(
-              height: 20,
+              height: 15, //adjust gap between first and second tab here
             ),
             _everyJumpColumn('Change  color scheme', () {
               showSelectColor();
             }),
             const SizedBox(
-              height: 20,
+              height: 15, //adjust gap between second and third tab distance here
             ),
             _everyJumpColumn('My collection', () {
               /// Jump to my collection page
@@ -86,20 +86,20 @@ class _MyPageState extends State<MyPage> {
 
   Widget _buildTopPersonalBasicInfo() {
     return Container(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(18),
       child: Row(
         children: [
           Expanded(
             child: Column(
               children: [
                 const SizedBox(
-                  height: 50,
+                  height: 120,
                   child: Row(
                     children: [
                       Text(
-                        'Me',
+                        'Home Page',
                         style: TextStyle(
-                            fontSize: 18, fontWeight: FontWeight.bold),
+                            fontSize: 30, fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),
@@ -111,14 +111,14 @@ class _MyPageState extends State<MyPage> {
                     Row(
                       children: [
                         ClipRRect(
-                            borderRadius: BorderRadius.circular(34),
+                            borderRadius: BorderRadius.circular(60),
                             child: Image.asset(
                               'assets/image/avatar.jpg',
-                              width: 80,
-                              height: 80,
+                              width: 120, // image size
+                              height: 120,
                             )),
                         Container(
-                          margin: const EdgeInsets.only(left: 12),
+                          margin: const EdgeInsets.only(left: 20), //username location
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
@@ -130,13 +130,13 @@ class _MyPageState extends State<MyPage> {
                                   borderRadius: BorderRadius.circular(19),
                                 ),
                                 padding: const EdgeInsets.only(
-                                  left: 10,
-                                  right: 10,
+                                  left: 20,
+                                  right: 20,
                                 ),
                                 child: const Text(
-                                  'UserName',
+                                  'My Culture Pulse',
                                   style: TextStyle(
-                                    fontSize: 18,
+                                    fontSize: 16,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
