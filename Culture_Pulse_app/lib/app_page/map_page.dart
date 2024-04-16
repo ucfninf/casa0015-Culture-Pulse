@@ -4,10 +4,8 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:culture_pulse_app/cache.dart';
 import 'package:culture_pulse_app/custom_database/database.dart';
 import 'package:culture_pulse_app/model/every_scenic_entity.dart';
+import 'package:culture_pulse_app/app_page/map_detail.dart';
 import 'package:sp_util/sp_util.dart';
-
-//use StatefulWidget pattern to manage the state 
-//of markers on the map and the user's current location.
 
 class MapPage extends StatefulWidget {
   const MapPage({super.key});
@@ -32,7 +30,7 @@ class _MyHomePageState extends State<MapPage>
     });
   }
 
-  // Get current location (here is to double check permissions)
+  // Get current location (double check permissions)
   Future<void> _getCurrentLocation() async {
     bool serviceEnabled;
     LocationPermission permission;
@@ -44,7 +42,7 @@ class _MyHomePageState extends State<MapPage>
       return;
     }
 
-// Get location permissions
+    // Get location permissions
     permission = await Geolocator.checkPermission();
     if (permission == LocationPermission.denied) {
       permission = await Geolocator.requestPermission();
@@ -60,7 +58,7 @@ class _MyHomePageState extends State<MapPage>
       return;
     }
 
- // Get current location
+    // Get current location
     Position position = await Geolocator.getCurrentPosition(
         desiredAccuracy: LocationAccuracy.high);
 
@@ -100,7 +98,7 @@ class _MyHomePageState extends State<MapPage>
     }
   }
 
- @override
+  @override
   Widget build(BuildContext context) {
     super.build(context);
     return Scaffold(
