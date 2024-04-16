@@ -31,7 +31,7 @@ class _MyPageState extends State<MyPage> {
         child: Column(
           children: [
             Container(
-              height: 160,
+              height: 200,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
@@ -54,7 +54,7 @@ class _MyPageState extends State<MyPage> {
               child: _buildTopPersonalBasicInfo(),
             ),
             const SizedBox(
-              height: 10,
+              height: 65,
             ),
             _everyJumpColumn('Restore original setting', () {
               showToast(
@@ -65,13 +65,13 @@ class _MyPageState extends State<MyPage> {
               });
             }),
             const SizedBox(
-              height: 3,
+              height: 20,
             ),
             _everyJumpColumn('Change  color scheme', () {
               showSelectColor();
             }),
             const SizedBox(
-              height: 8,
+              height: 20,
             ),
             _everyJumpColumn('My collection', () {
               /// Jump to my collection page
@@ -164,7 +164,7 @@ class _MyPageState extends State<MyPage> {
         voidCallBack.call();
       },
       child: Container(
-        margin: const EdgeInsets.only(left: 10, right: 10),
+        margin: const EdgeInsets.only(left: 15, right: 15),
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
           color: Color(
