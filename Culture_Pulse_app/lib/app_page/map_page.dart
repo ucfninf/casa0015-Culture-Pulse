@@ -49,4 +49,17 @@ class _MyHomePageState extends State<MapPage>
       }
     }
 
-if (
+    if (permission == LocationPermission.deniedForever) {
+      print(
+          'Location permissions are permanently denied, we cannot request permissions.');
+      return;
+    }
+
+
+    Position position = await Geolocator.getCurrentPosition(
+        desiredAccuracy: LocationAccuracy.high);
+
+    setState(() {
+      currentPosition = LatLng(position.latitude, position.longitude);
+    });
+  }
