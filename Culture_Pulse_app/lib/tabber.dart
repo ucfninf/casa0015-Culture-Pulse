@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:culture_pulse_app/cache.dart';
+import 'package:culture_pulse_app/app_page/map_page.dart';
+import 'package:culture_pulse_app/app_page/my_page.dart';
 import 'package:sp_util/sp_util.dart';
 
 class Taber extends StatefulWidget {
