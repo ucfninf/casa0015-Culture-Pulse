@@ -31,7 +31,7 @@ class _MyPageState extends State<MyPage> {
         child: Column(
           children: [
             Container(
-              height: 280, //adjust yellow background here
+              height: 300, //adjust yellow background here
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
