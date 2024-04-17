@@ -132,7 +132,7 @@ class _MyCollectionPageState extends State<MyCollectionPage> {
                     },
                     child: const Icon(
                       Icons.favorite,
-                      color: Colors.red,
+                      color: Color.fromARGB(255, 228, 99, 90),
                       size: 20,
                     )),
                 Row(
