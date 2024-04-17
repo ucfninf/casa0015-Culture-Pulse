@@ -113,9 +113,9 @@ class _MyPageState extends State<MyPage> {
                         ClipRRect(
                             borderRadius: BorderRadius.circular(60),
                             child: Image.asset(
-                              'assets/image/avatar.jpg',
-                              width: 120, // image size
-                              height: 120,
+                              'assets/image/culture_pulse.png',
+                              width: 130, // image size
+                              height: 130,
                             )),
                         Container(
                           margin: const EdgeInsets.only(left: 20), //username location
