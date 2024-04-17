@@ -54,13 +54,9 @@ class _SplashPageState extends State<SplashPage> {
           'Location permissions are permanently denied, we cannot request permissions.');
       return;
     }
+    
     // // Here is to get current location,will test on a real android phone to see if this works 
-    // Position position = await Geolocator.getCurrentPosition(
-    //     desiredAccuracy: LocationAccuracy.high);
-    //
-    // setState(() {
-    //   currentPosition = LatLng(position.latitude, position.longitude);
-    // });
+   
   }
 
   void startTimer() {
