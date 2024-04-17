@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MapPage>
       return;
     }
 
-    // Get current location
+    // Get current location, (note that real phone will show user's current location, emulator will not)
     Position position = await Geolocator.getCurrentPosition(
         desiredAccuracy: LocationAccuracy.high);
 
