@@ -104,7 +104,6 @@ class _MyHomePageState extends State<MapPage>
     super.build(context);
     return Scaffold(
       resizeToAvoidBottomInset: false,
-
       appBar: AppBar(
         leading: null,
         automaticallyImplyLeading: false,
@@ -139,7 +138,8 @@ class _MyHomePageState extends State<MapPage>
                       ...List.generate(
                           scenicList.length,
                           (index) => Marker(
-                                markerId: MarkerId(scenicList[index].id.toString()),
+                                markerId:
+                                    MarkerId(scenicList[index].id.toString()),
                                 position: LatLng(scenicList[index].latitude!,
                                     scenicList[index].longitude!),
                                 onTap: () {
@@ -152,8 +152,8 @@ class _MyHomePageState extends State<MapPage>
                                               )));
                                 },
                                 icon: getIcon(scenicList[index].type!),
-                                infoWindow:
-                                    InfoWindow(title: scenicList[index].name ?? ''),
+                                infoWindow: InfoWindow(
+                                    title: scenicList[index].name ?? ''),
                               )),
                     },
                   ),
@@ -161,37 +161,46 @@ class _MyHomePageState extends State<MapPage>
               ],
             ),
           ),
+          // info box with translucent frame
           Positioned(
-              top: 10,
+              top: 8,
               right: 10,
-              child: Column(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.all(8.0),
-                    height: 50,
-                    width: 200,
-                    child: TextField(
-                      controller: TextEditingController(),
-                      focusNode: null,
-                      readOnly: true,
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (_) => const SearchScreen()));
-                      },
-                      decoration: const InputDecoration(
-                        hintText: 'Search...',
-                        prefixIcon: Icon(Icons.search),
+              child: Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(255, 170, 216, 236).withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(5),
+                ),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(8.0),
+                      height: 50,
+                      width: 120,
+                      child: TextField(
+                        controller: TextEditingController(),
+                        focusNode: null,
+                        readOnly: true,
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (_) => const SearchScreen()));
+                        },
+                        decoration: const InputDecoration(
+                          hintText: 'Search...',
+                          prefixIcon: Icon(Icons.search),
+                        ),
                       ),
                     ),
-                  ),
-                  // getSymbolStyle(Colors.blue,'My Location'),
-                  getSymbolStyle(Colors.orange, 'Museum'),
-                  getSymbolStyle(Colors.green, 'Park'),
-                  getSymbolStyle(Colors.red, 'Historical Site'),
-                  getSymbolStyle(Colors.cyan, 'Scenic spot'),
-                ],
+                    // getSymbolStyle(Colors.blue,'My Location'),
+                    getSymbolStyle(Colors.orange, 'Museum'),
+                    getSymbolStyle(Colors.green, 'Park'),
+                    getSymbolStyle(Colors.red, 'Historical Site'),
+                    getSymbolStyle(Colors.cyan, 'Scenic spot'),
+                  ],
+                ),
               )),
         ],
       ),
