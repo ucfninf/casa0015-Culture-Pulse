@@ -40,7 +40,7 @@ class _MapDetailPageState extends State<MapDetailPage> {
             Color(SpUtil.getInt(Cache.mainColorCache) ?? Cache.mainColor.value),
         centerTitle: true,
         title: const Text(
-          'Scenic Detail',
+          'Attraction Details',
           style: TextStyle(fontSize: 16),
         ),
       ),
@@ -111,7 +111,7 @@ class _MapDetailPageState extends State<MapDetailPage> {
                   ),
                 ),
                 onPressed: () {
-                  /// Navigate page
+                  /// Navigate page//
                   Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -167,11 +167,11 @@ class _MapDetailPageState extends State<MapDetailPage> {
     }
     if (value) {
       collectedList.add(widget.scenicModel);
-      showToast('collect successfully');
+      showToast('Collect successfully');
     } else {
       collectedList
           .removeWhere((element) => element.id == widget.scenicModel.id);
-      showToast('unCollect successfully');
+      showToast('Uncollect successfully');
     }
     SpUtil.putObjectList(Cache.myCollectionScenicList, collectedList);
     setState(() {});
