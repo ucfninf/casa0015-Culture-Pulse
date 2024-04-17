@@ -94,7 +94,7 @@ class _MapDetailPageState extends State<MapDetailPage> {
                 },
                 icon: Icon(Icons.favorite,
                     color: getThisScenicIsCollected()
-                        ? Colors.red
+                        ? Color.fromARGB(255, 216, 101, 93)
                         : Colors.grey[200])),
             SizedBox(
               width: 120,
