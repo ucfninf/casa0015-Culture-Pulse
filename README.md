@@ -8,6 +8,8 @@ Functionality:This app provides a detailed attraction information display interf
 
 ![屏幕截图 2024-02-05 234032](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/0eb05043-34bc-4ad8-9e3b-eda64ffea72f)
 
+### Problem Statement：This mobile app aims to help users discover and travel to local (UK) intangible cultural heritage by providing accurate information about local cultural events, traditions and practitioners.
+
 ## Key Features
 
 - landmark Showcase: Dive into the rich tapestry of intangible cultural heritage through multimedia presentations, including videos, images, and stories.
