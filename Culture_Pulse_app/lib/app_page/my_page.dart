@@ -54,7 +54,51 @@ class _MyPageState extends State<MyPage> {
               child: _buildTopPersonalBasicInfo(),
             ),
             const SizedBox(
-              height: 40, //adjust white first gap on homepage here
+              height: 20, //adjust white first gap on homepage here
+            ),
+            
+           //location for MY COLLECTION jump column
+             const SizedBox(
+              height: 10, //adjust gap between first and yellow gap tab here
+            ),
+            _everyJumpColumn('My Collection', () {
+              /// Jump to my collection page
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (_) => const MyCollectionPage()));
+            }), 
+             
+             
+            
+           // Insert a box for pictures between my collection and change color scheme
+              const SizedBox(
+                   height: 20, 
+                    ),
+              Container(
+                
+                     height: 200, // adjust box height
+                     color: Color.fromARGB(255, 250, 238, 198), 
+                     child: Center(
+                     child: Image.asset('assets/image/culture_pulse.png', 
+                               width: 800, 
+                               height: 150, 
+                     fit: BoxFit.contain, // set the image fit box
+                            ),
+                           ),
+                          ), 
+                const SizedBox(
+                     height: 20, 
+                      ),
+
+            //location for change color scheme command
+            const SizedBox(
+              height: 10, // adjust gap between first and second tab distance here
+            ),
+            _everyJumpColumn('Change Color Scheme', () {
+              showSelectColor();
+            }),
+           
+            const SizedBox(
+              height: 10, // adjust gap between second and third tab distance here
             ),
             _everyJumpColumn('Restore original setting', () {
               showToast(
@@ -63,20 +107,6 @@ class _MyPageState extends State<MyPage> {
                 SpUtil.putInt(Cache.mainColorCache, Cache.mainColor.value);
                 SpUtil.putObjectList(Cache.myCollectionScenicList, []);
               });
-            }),
-            const SizedBox(
-              height: 15, //adjust gap between first and second tab here
-            ),
-            _everyJumpColumn('Change  color scheme', () {
-              showSelectColor();
-            }),
-            const SizedBox(
-              height: 15, //adjust gap between second and third tab distance here
-            ),
-            _everyJumpColumn('My collection', () {
-              /// Jump to my collection page
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (_) => const MyCollectionPage()));
             }),
           ],
         ),
