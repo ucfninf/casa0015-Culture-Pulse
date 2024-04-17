@@ -1,3 +1,5 @@
+// Culture Pulse Map Details
+
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
