@@ -112,7 +112,7 @@ class _MyHomePageState extends State<MapPage>
             Color(SpUtil.getInt(Cache.mainColorCache) ?? Cache.mainColor.value),
         centerTitle: true,
         title: const Text(
-          '~Culture Pulse Map~',
+          'Culture Pulse Map',
           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
       ),
@@ -169,7 +169,7 @@ class _MyHomePageState extends State<MapPage>
               child: Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 170, 216, 236).withOpacity(0.2),
+                  color: Color.fromARGB(255, 170, 216, 236).withOpacity(0.4),
                   borderRadius: BorderRadius.circular(5),
                 ),
                 child: Column(
@@ -177,8 +177,8 @@ class _MyHomePageState extends State<MapPage>
                   children: [
                     Container(
                       padding: const EdgeInsets.all(8.0),
-                      height: 50,
-                      width: 120,
+                      height: 52,
+                      width: 110,
                       child: TextField(
                         controller: TextEditingController(),
                         focusNode: null,
@@ -190,7 +190,7 @@ class _MyHomePageState extends State<MapPage>
                                   builder: (_) => const SearchScreen()));
                         },
                         decoration: const InputDecoration(
-                          hintText: 'Search...',
+                          hintText: 'Search',
                           prefixIcon: Icon(Icons.search),
                         ),
                       ),
