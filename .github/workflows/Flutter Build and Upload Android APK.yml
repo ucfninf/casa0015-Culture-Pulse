@@ -6,6 +6,10 @@ on:
     # tags:
     # - "v*.*.*"          # In this case when you tag your commit with v1.0.0 for example
 
+defaults:  
+  run:
+    working-directory: geotracker/
+    
 jobs:
   build:
     runs-on: ubuntu-latest  # This is the type of machine we want to run the action on
@@ -13,7 +17,7 @@ jobs:
       contents: write
 
     steps:
-      - name: Casa0015-Culture-Pulse
+      - name: Checkout repository
         uses: actions/checkout@v3     # Checkout the Repository on the Virtual Machine
 
       - name: Set up JDK              # Setup JAVA to build the Android APK for us
