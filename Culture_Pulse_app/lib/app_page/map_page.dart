@@ -20,12 +20,17 @@ class _MyHomePageState extends State<MapPage>
     with AutomaticKeepAliveClientMixin<MapPage> {
   LatLng? currentPosition;
   List<EveryScenicEntity> scenicList = [];
+  BitmapDescriptor? currentIcon;
 
   @override
   void initState() {
     super.initState();
     scenicList = AllScenic.scenicList;
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) async {
+      currentIcon = await BitmapDescriptor.fromAssetImage(
+        ImageConfiguration(
+
+        ), 'assets\image\culture_pulse no background.png');
       /// Request permission first
       await _getCurrentLocation();
       setState(() {});
@@ -132,10 +137,16 @@ class _MyHomePageState extends State<MapPage>
                     initialCameraPosition: CameraPosition(
                       /// Get current location
                       target: currentPosition ?? const LatLng(51.5074, -0.1278),
-                      zoom: 10,
+                      zoom: 20,
                     ),
-                    myLocationButtonEnabled: true,
                     markers: {
+                      Marker(
+                        markerId: MarkerId("currentPosition"),
+                        position:
+                            currentPosition ?? const LatLng(51.5074, -0.1278),
+                        icon: getIcon(-1),
+                        infoWindow: InfoWindow(title: 'current position'),
+                      ),
                       ...List.generate(
                           scenicList.length,
                           (index) => Marker(
