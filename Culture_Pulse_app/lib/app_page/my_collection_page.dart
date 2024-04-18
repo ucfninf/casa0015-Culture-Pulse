@@ -41,7 +41,7 @@ class _MyCollectionPageState extends State<MyCollectionPage> {
         centerTitle: true,
         title: const Text(
           'My Collection',
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
         ),
       ),
       body: SingleChildScrollView(

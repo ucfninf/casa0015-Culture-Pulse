@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:culture_pulse_app/cache.dart';
@@ -111,8 +112,8 @@ class _MyHomePageState extends State<MapPage>
             Color(SpUtil.getInt(Cache.mainColorCache) ?? Cache.mainColor.value),
         centerTitle: true,
         title: const Text(
-          'Map Page',
-          style: TextStyle(fontSize: 16),
+          '~Culture Pulse Map~',
+          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
       ),
       body: Stack(
