@@ -87,14 +87,56 @@ void _goTabber() {
     Navigator.push(context, MaterialPageRoute(builder: (_) => const Taber()));
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return const Material(
-      child: Center(
-        child: SizedBox(
-          child: Text('Pulse the culture from past, present, future'),
+        @override
+Widget build(BuildContext context) {
+  return Material(
+    child: Stack(
+      children: [
+        // background
+        Container(
+          decoration: BoxDecoration(
+            color: Color.fromARGB(255, 228, 221, 208), // background color
+          ),
         ),
-      ),
-    );
-  }
+        // Logo image and Slogan
+        Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              // Logo image
+              Image.asset(
+                'assets/image/culture_pulse no background.png', 
+                width: 50,
+                height: 50,
+            
+              ),
+              SizedBox(height: 15), // spacing
+              // Slogan
+             const Text(
+                'Pulse the culture from past, present, future',
+                style: TextStyle(
+                  fontSize: 22, 
+                  fontWeight: FontWeight.bold, // bold
+                  fontStyle: FontStyle.italic,
+                  color: Color.fromARGB(255, 82, 56, 21), 
+                ),
+                textAlign: TextAlign.center, 
+              ),
+              SizedBox(height: 15), // 
+        // secondary intro
+             const Text(
+              'This mobile app aims to help users discover and travel to local (UK) historical heritage by providing accurate information about local cultural events, traditions and practitioners. ',
+            style: TextStyle(
+            fontSize: 12, 
+            color: Colors.grey,
+                 ),
+              textAlign: TextAlign.center,
+             ),
+            ],
+          ),
+        ),
+      ] 
+    ),
+  );
+}
 }
