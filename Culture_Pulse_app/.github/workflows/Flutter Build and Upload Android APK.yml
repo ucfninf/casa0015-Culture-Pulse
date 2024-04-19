@@ -9,7 +9,7 @@ on:
 defaults:
 run:
     working-directory: APP_DIRECTORY
-    
+
 jobs:
   build:
     runs-on: ubuntu-latest  # This is the type of machine we want to run the action on
@@ -52,9 +52,6 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           channel: 'main'
-
-      - name: Change to Flutter project directory
-        run: cd /home/runner/work/casa0015-Culture-Pulse/culture_pulse_app   # add flutter project directory
 
       - name: Get Flutter dependencies      # Get the Libraries and Dependencies
         run: flutter pub get
