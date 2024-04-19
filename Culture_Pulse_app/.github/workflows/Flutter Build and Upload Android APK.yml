@@ -50,7 +50,7 @@ jobs:
           channel: 'main'
 
       - name: Change to Flutter project directory
-        run: cd casa0015-Culture-Pulse/culture_pulse_app
+        run: cd /home/runner/work/casa0015-Culture-Pulse/culture_pulse_app
 
       - name: Get Flutter dependencies      # Get the Libraries and Dependencies
         run: flutter pub get
