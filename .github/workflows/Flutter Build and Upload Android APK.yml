@@ -22,6 +22,7 @@ jobs:
 
       - name: List directory
         run: ls -la
+        working-directory: ${{ github.workspace }}
 
       - name: List project directory
         run: ls -la culture_pulse_app
