@@ -25,7 +25,11 @@ jobs:
         with:
           java-version: '11'
           distribution: microsoft
-
+      
+      - name: Setup Kotlin
+        uses: eskatos/gradle-command-action@v2
+        with:
+        arguments: "-Pkotlin_version=1.6.0 build"
       #  Decode keystore File from repository secrets
       #  Keep the keystore file private; don't check it into public source control!
       
