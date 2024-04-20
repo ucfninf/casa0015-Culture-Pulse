@@ -8,7 +8,7 @@ on:
 
 defaults:  
   run:
-    working-directory: culture_pulse_app
+    
 
 jobs:
   build:
@@ -43,6 +43,8 @@ jobs:
         run: |
           VERSION=$(yq .version | grep -Eo '[0-9]+\.[0-9]+\.[0-9]+' pubspec.yaml | head -n 1)
           echo "TAG_VERSION=$VERSION" >> $GITHUB_ENV
+        working-directory: culture_pulse_app
+
       - name: Create git tag
         run: |
           git tag "v${{ env.TAG_VERSION }}"
