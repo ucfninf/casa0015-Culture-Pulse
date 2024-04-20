@@ -5,9 +5,9 @@ on:
     branches: [ main ]  # In this case when you push your code into GitHub
     # tags:
     # - "v*.*.*"          # In this case when you tag your commit with v1.0.0 for example
-    
-defaults:
-run:
+
+defaults:  
+  run:
     working-directory: APP_DIRECTORY
 
 jobs:
@@ -27,7 +27,7 @@ jobs:
           distribution: microsoft
 
       #  Decode keystore File from repository secrets
-      #  Keep the keystore file private; don’t check it into public source control!
+      #  Keep the keystore file private; don't check it into public source control!
       
       #- name: Decode KeyStore File (.jks)            
       #  run: echo "${{ secrets.KEYSTORE_JKS_PROD }}" | base64 --decode > android/keystore.jks
@@ -107,4 +107,4 @@ jobs:
   #       groups: android-developers
   #       file: ${{secrets.APP_NAME}}.apk
   #  OR
-  #       file: ${{secrets.APP_NAME}}.aab
+  #       file: ${{secrets.APP_NAME}}.aabdefaults:
