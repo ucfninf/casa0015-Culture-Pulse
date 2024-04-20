@@ -1,5 +1,6 @@
 # CulturalPulse
-![culture pulse logo](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/6f0643b4-73e3-48f2-a5e7-c161b7bb0c45)
+Application logo:![logo 36x36](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/0c77d94d-5f62-42ec-82cf-80ccc4ebb127)
+
 
 **Discover, Experience, and Preserve Cultural Heritage**
 
@@ -17,8 +18,10 @@ Functionality:This app provides a detailed attraction information display interf
  ( by adapting google landmark detection API: https://cloud.google.com/vision/docs/detecting-landmarks
 which detects popular natural and human-made structures within an image.
   
-attraction details:![attraction details](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/18ad76fd-792a-4d46-97af-b6b844ec5918)  
-![Screenshot_1713439457](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/e2f54f62-188d-407f-91dc-851c7bb39fae)
+attraction details and key functionalities:
+![attraction details](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/a91c03c1-7888-4da3-b57a-f3adc88e43ee)
+
+![attraction details](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/cd3449c3-ee0e-4800-a7bd-04e3cbc9c764)
 
 Retrieved from the UNESCO website of all the landmarks and sites in the United Kingdom. In this case allow users to view and navigate to the sites in the uk based on all the Scenic spot's and there categories.
 
