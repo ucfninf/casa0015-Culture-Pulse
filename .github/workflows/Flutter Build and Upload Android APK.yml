@@ -8,7 +8,7 @@ on:
 
 defaults:  
   run:
-    working-directory: cd culture_pulse_app
+    working-directory: culture_pulse_app
 
 jobs:
   build:
@@ -42,11 +42,11 @@ jobs:
         id: get_flutter_app_version
         run: |
           VERSION=$(yq .version | grep -Eo '[0-9]+\.[0-9]+\.[0-9]+' pubspec.yaml | head -n 1)
-          echo "TAG_VERSION=$VERSION" >> $GITHUB_OUTPUT
+          echo "TAG_VERSION=$VERSION" >> $GITHUB_ENV
   
       - name: Create git tag
         run: |
-          git tag "v${{ steps.get_flutter_app_version.outputs.TAG_VERSION }}"
+          git tag "v${{ env.TAG_VERSION }}"
 
       - name: Install Flutter               # Install Flutter
         uses: subosito/flutter-action@v2
