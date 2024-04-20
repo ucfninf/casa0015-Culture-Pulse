@@ -1,5 +1,6 @@
 # CulturalPulse
-Application logo:![logo 36x36](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/0c77d94d-5f62-42ec-82cf-80ccc4ebb127)
+Application logo:
+![360X360](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/bae78083-b957-4779-bd33-9e8e433f0560)
 
 
 **Discover, Experience, and Preserve Cultural Heritage**
@@ -19,9 +20,11 @@ Functionality:This app provides a detailed attraction information display interf
 which detects popular natural and human-made structures within an image.
   
 attraction details and key functionalities:
-![attraction details](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/a91c03c1-7888-4da3-b57a-f3adc88e43ee)
+![map 360](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/e069c55e-9071-4456-9afa-051c253d3c8a)
 
-![attraction details](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/cd3449c3-ee0e-4800-a7bd-04e3cbc9c764)
+![attraction details readme](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/ac7526e1-5509-49bd-9d8f-91beb4467e15)
+
+
 
 Retrieved from the UNESCO website of all the landmarks and sites in the United Kingdom. In this case allow users to view and navigate to the sites in the uk based on all the Scenic spot's and there categories.
 
