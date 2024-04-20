@@ -22,9 +22,7 @@ which detects popular natural and human-made structures within an image.
   
 attraction details and key functionalities:
 
-![map 360](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/e069c55e-9071-4456-9afa-051c253d3c8a)
-
-![attraction details readme](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/ac7526e1-5509-49bd-9d8f-91beb4467e15)
+![map 360](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/e069c55e-9071-4456-9afa-051c253d3c8a) ![attraction details readme](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/ac7526e1-5509-49bd-9d8f-91beb4467e15)
 
 
 
