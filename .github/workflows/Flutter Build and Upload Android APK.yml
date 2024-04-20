@@ -37,7 +37,7 @@ jobs:
           channel: 'main'
 
       - name: Change to Flutter project directory
-        run: cd culture_pulse_app
+        run: culture_pulse_app
 
       - name: Get Flutter dependencies
         run: flutter pub get
