@@ -8,7 +8,7 @@ on:
 
 defaults:  
   run:
-    working-directory: casa0015-Culture-Pulse
+    working-directory: culture_pulse_app
 
 jobs:
   build:
