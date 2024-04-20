@@ -8,7 +8,7 @@ on:
 
 defaults:  
   run:
-    working-directory: casa0015-Culture-Pulse/culture_pulse_app
+    working-directory: culture_pulse_app
 
 jobs:
   build:
@@ -54,7 +54,7 @@ jobs:
           channel: 'main'
 
       - name: Change to Flutter project directory
-        run: cd casa0015-Culture-Pulse/culture_pulse_app
+        run: cd culture_pulse_app
 
       - name: Get Flutter dependencies      # Get the Libraries and Dependencies
         run: flutter pub get
