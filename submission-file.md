@@ -33,6 +33,7 @@ for citation - [https://www.scribbr.co.uk/referencing/harvard-website-reference/
 1. Last name, First initial. (Year published). Title. Edition. (Only include the edition if it is not the first edition) City published: Publisher, Page(s). <http://google.com>
 
 2. Last name, First initial. (Year published). Title. Edition. (Only include the edition if it is not the first edition) City published: Publisher, Page(s).  <http://google.com>
+3. OpenAI: https://www.openai.com/ ChatGPT Website: https://chat.openai.com/  
 
 ----
 
