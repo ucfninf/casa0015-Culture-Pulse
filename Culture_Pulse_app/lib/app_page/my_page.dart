@@ -90,7 +90,7 @@ class _MyPageState extends State<MyPage> {
             ),
             _everyJumpColumn('Restore original setting', () {
               showToast(
-                  'Restored to original settings，all data has been restored to the original state');
+                  'Restored to original settings,all data has been restored to the original state');
               setState(() {
                 SpUtil.putInt(Cache.mainColorCache, Cache.mainColor.value);
                 SpUtil.putObjectList(Cache.myCollectionScenicList, []);
