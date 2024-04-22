@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 
 import 'package:oktoast/oktoast.dart';
 import 'package:culture_pulse_app/cache.dart';
@@ -66,15 +65,12 @@ class _MyPageState extends State<MyPage> {
               Navigator.push(context,
                   MaterialPageRoute(builder: (_) => const MyCollectionPage()));
             }), 
-             
-             
             
            // Insert a box for pictures between my collection and change color scheme
               const SizedBox(
                    height: 20, 
                     ),
-              Container(
-                
+              Container(      
                      height: 200, // adjust box height
                      color: Color.fromARGB(255, 250, 238, 198), 
                      child: Center(
@@ -88,14 +84,6 @@ class _MyPageState extends State<MyPage> {
                 const SizedBox(
                      height: 20, 
                       ),
-
-            //location for change color scheme command
-            const SizedBox(
-              height: 10, // adjust gap between first and second tab distance here
-            ),
-            _everyJumpColumn('Change Color Scheme', () {
-              showSelectColor();
-            }),
            
             const SizedBox(
               height: 10, // adjust gap between second and third tab distance here
@@ -213,44 +201,5 @@ class _MyPageState extends State<MyPage> {
         ),
       ),
     );
-  }
-
-  void showSelectColor() {
-    showDialog(
-      builder: (context) => AlertDialog(
-        title: const Text('Pick a color!'),
-        content: SingleChildScrollView(
-          child: ColorPicker(
-            pickerColor: Color(
-                SpUtil.getInt(Cache.mainColorCache) ?? Cache.mainColor.value),
-            onColorChanged: changeColor,
-          ),
-        ),
-        actions: <Widget>[
-          ElevatedButton(
-            child: const Text('Got it'),
-            onPressed: () {
-              setState(() {
-                SpUtil.putInt(
-                    Cache.mainColorCache,
-                    pickerColor?.value ??
-                        (SpUtil.getInt(Cache.mainColorCache) ??
-                            Cache.mainColor.value));
-              });
-              Navigator.of(context).pop();
-            },
-          ),
-        ],
-      ),
-      context: context,
-    ).then((value) => widget.refreshData?.call());
-  }
-
-  Color? pickerColor;
-
-  void changeColor(Color color) {
-    setState(() {
-      pickerColor = color;
-    });
   }
 }
