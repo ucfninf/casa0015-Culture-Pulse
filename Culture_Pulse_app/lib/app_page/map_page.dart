@@ -20,17 +20,13 @@ class _MyHomePageState extends State<MapPage>
     with AutomaticKeepAliveClientMixin<MapPage> {
   LatLng? currentPosition;
   List<EveryScenicEntity> scenicList = [];
-  BitmapDescriptor? currentIcon;
 
   @override
   void initState() {
     super.initState();
     scenicList = AllScenic.scenicList;
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) async {
-      currentIcon = await BitmapDescriptor.fromAssetImage(
-        ImageConfiguration(
-
-        ), 'assets\image\culture_pulse no background.png');
+      
       /// Request permission first
       await _getCurrentLocation();
       setState(() {});
@@ -133,20 +129,15 @@ class _MyHomePageState extends State<MapPage>
                   /// Its markers and the image cache queue used for image processing will be destroyed during redrawing and making zoom unfunctional
                   width: MediaQuery.sizeOf(context).width,
                   height: MediaQuery.sizeOf(context).height - 170,
-                  child: GoogleMap(
+                  child:  currentPosition !=null?
+                  GoogleMap(
                     initialCameraPosition: CameraPosition(
-                      /// Get current location
+                      /// current position
                       target: currentPosition ?? const LatLng(51.5074, -0.1278),
-                      zoom: 20,
+                      zoom: 10,
                     ),
+                    myLocationEnabled: true,
                     markers: {
-                      Marker(
-                        markerId: MarkerId("currentPosition"),
-                        position:
-                            currentPosition ?? const LatLng(51.5074, -0.1278),
-                        icon: getIcon(-1),
-                        infoWindow: InfoWindow(title: 'current position'),
-                      ),
                       ...List.generate(
                           scenicList.length,
                           (index) => Marker(
@@ -168,11 +159,13 @@ class _MyHomePageState extends State<MapPage>
                                     title: scenicList[index].name ?? ''),
                               )),
                     },
-                  ),
+                  ) : 
+                  const SizedBox(),
                 ),
               ],
             ),
           ),
+
           // info box with translucent frame
           Positioned(
               top: 8,
