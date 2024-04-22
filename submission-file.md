@@ -36,8 +36,8 @@ The landing page of the application introduces users to its purpose and features
 2. Last name, First initial. (Year published). Title. Edition. (Only include the edition if it is not the first edition) City published: Publisher, Page(s).  <http://google.com>
 3. OpenAI: https://www.openai.com/ ChatGPT Website: https://chat.openai.com/
 4. Google Developers. (n.d.). Google Maps Platform Documentation. Available at: https://developers.google.com/maps/documentation.
-5. Flutter. (n.d.). Flutter Official Getting Started Guide. Available at: https://flutter.dev/docs/get-started/install 
-
+5. Flutter. (n.d.). Flutter Official Getting Started Guide. Available at: https://flutter.dev/docs/get-started/install
+6. landing page theme reference: https://templatemo.com/tm-540-lava-landing-page#goog_rewarded
 
 ----
 
