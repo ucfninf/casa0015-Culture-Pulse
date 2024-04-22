@@ -1,9 +1,9 @@
 <!---
 
 ---
-title: "CASA0017: Web Architecture Final Assessment"
-author: "Steven Gray"
-date: "10 Dec 2021"
+title: "CASA0015: Mobile System and Interaction"
+author: "Yuhua Jin"
+date: "23 Apr 2024"
 ---
 
 -->
@@ -20,28 +20,32 @@ Upload this PDF into Moodle for submission including a copy of your presentation
 
 ## Link to GitHub Repository
 
-Flutter Application Name - MY APPLICATION NAME
-GitHub Repository - [https://github.com/ucl-casa-ce/casa0015-mobile-assessment](https://github.com/ucl-casa-ce/casa0015-mobile-assessment)
+Flutter Application Name - Culture Pulse
+GitHub Repository - [https://github.com/ucfninf/casa0015-Culture-Pulse](https://github.com/ucl-casa-ce/casa0015-mobile-assessment)
 
 ## Introduction to Application
 
-A brief 200 word explanation of your application and it's use.  Below create a Bibliography to code, tutorial, or plugins you've used in the project. Use this guide
-for citation - [https://www.scribbr.co.uk/referencing/harvard-website-reference/](https://www.scribbr.co.uk/referencing/harvard-website-reference/)
+"Culture Pulse" is a mobile application designed to connect users with the rich historical heritage of the UK. It provides a platform for discovering and exploring local cultural events, traditions, and practitioners, catering specifically to enthusiasts of cultural tourism and local history. The app features a user-friendly map interface where users can filter through categories to find specific sites and events of interest. For more personalized usage, there's a "My Page" section where users can save their favorite spots and images, enhancing their planning and visit experiences.
+
+The landing page of the application introduces users to its purpose and features, showcasing the app’s logo and a catchy slogan. This setup not only welcomes users but also gives a clear idea of what the app aims to achieve: fostering a deeper appreciation and understanding of local culture and heritage through technology. Whether you're a history buff, a tourist, or a local explorer, "Culture Pulse" offers a convenient and informative gateway to the UK's historical treasures.
 
 ## Biblography
 
 1. Last name, First initial. (Year published). Title. Edition. (Only include the edition if it is not the first edition) City published: Publisher, Page(s). <http://google.com>
 
 2. Last name, First initial. (Year published). Title. Edition. (Only include the edition if it is not the first edition) City published: Publisher, Page(s).  <http://google.com>
-3. OpenAI: https://www.openai.com/ ChatGPT Website: https://chat.openai.com/  
+3. OpenAI: https://www.openai.com/ ChatGPT Website: https://chat.openai.com/
+4. Google Developers. (n.d.). Google Maps Platform Documentation. Available at: https://developers.google.com/maps/documentation.
+5. Flutter. (n.d.). Flutter Official Getting Started Guide. Available at: https://flutter.dev/docs/get-started/install 
+
 
 ----
 
 ## Declaration of Authorship
 
-We, AUTHORS NAME HERE, confirm that the work presented in this assessment is my own. Where information has been derived from other sources, I confirm that this has been indicated in the work.
+I, Yuhua (Annie) Jin, confirm that the work presented in this assessment is my own. Where information has been derived from other sources, I confirm that this has been indicated in the work.
 
 
-Digitally Sign with Your name Here
+Yuhua (Annie) Jin, 
 
 ASSESSMENT DATE
