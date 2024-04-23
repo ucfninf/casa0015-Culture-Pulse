@@ -11,7 +11,7 @@ date: "23 Apr 2024"
 ## Link to GitHub Repository
 
 Flutter Application Name - Culture Pulse
-GitHub Repository - [https://github.com/ucfninf/casa0015-Culture-Pulse](https://github.com/ucl-casa-ce/casa0015-mobile-assessment)
+GitHub Repository - [https://github.com/ucfninf/casa0015-Culture-Pulse](https://github.com/ucfninf/casa0015-Culture-Pulse)
 
 ## Introduction to Application
 
