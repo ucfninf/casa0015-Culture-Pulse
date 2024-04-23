@@ -1,13 +1,36 @@
 # CulturalPulse
 
-![CulturalPulse Logo](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/logo.png)
+![360X360](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/6b627036-209a-4a07-9692-fced887414e6)
 
-**Discover, Experience, and Engage with the UK's Historical Heritage**
+Slogan:Slogan: Pulse the Culture from past, present, and future 
 
-Welcome to CulturalPulse, an innovative mobile application designed to connect you with the UK's vast historical and cultural heritage. With CulturalPulse, embark on a journey to explore historic sites, uncover traditions, and celebrate the rich cultural tapestry recognized by UNESCO.
+Welcome to CulturalPulse, an innovative mobile application designed to connect you with the UK's vast historical and cultural heritage. With CulturalPulse, embark on a journey to explore historic sites, uncover traditions, and celebrate the rich cultural tapestry recognized by UNESCO.This mobile app is designed to help users discover and engage with the historical heritage in the UK. With interactive features that invite engagement and real-time weather data for each site.
+
+It’s designed for the curious minds who wish to delve into history with the smart integration of their surroundings, making each visit an informed and interactive experience, no matter where they are.
+
+##About 
+Author: Yuhua Jin
+
+Collaboration: Yuhua Jin collaborated with the GPT-3.5 model and GPT-4.0 to create this mobile app.
+
+Technology Stack: Written entirely in Dart and developed using Flutter in VScode.
+                  deployed in Android Studio Simulator and Google Pixel 3a.
+Data in the app is retrieved from:
+- [UNESCO UK World Heritage Sites](https://unesco.org.uk/world-heritage-sites/)
+- [UNESCO World Heritage Centre Syndication](https://whc.unesco.org/en/syndication)
+                  
+- **Yuhua:** [GitHub](https://github.com/ucfninf/casa0015-Culture-Pulse)
+
+- **ChatGPT:** [OpenAI](https://www.openai.com/)
+##User Personna
+(![屏幕截图 2024-04-23 033606](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/978fa23f-f325-4430-a15a-8805e57521de))
+(![屏幕截图 2024-04-23 033635](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/56eb15b6-3bc0-4fe1-bc4a-c84662146772))
+
+(![image](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/37bc1757-2ff5-426c-81e7-757718f8f414))
 
 ## Application Features
-![屏幕截图 2024-04-23 031749](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/cdf454a4-9c9b-40ea-876e-a9d85cb6fb4c) ![屏幕截图 2024-04-23 031813](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/b4e01790-2c16-4f78-a4d5-fe44ccb30d04)
+(![屏幕截图 2024-04-23 031749](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/4fa98a93-67db-4fba-afab-30443d77050d))
+(![屏幕截图 2024-04-23 031813](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/b4e01790-2c16-4f78-a4d5-fe44ccb30d04))
 
 
 **Interactive Mapping**: Navigate effortlessly through a detailed map enriched with heritage sites and landmarks.
@@ -99,9 +122,9 @@ In the development of the CulturalPulse app, I utilized OpenAI's ChatGPT-4.0 and
 - Mitch Koko (2023).  FULL Flutter Beginner Course • Programming Basics / Widgets / Navigation / User Input / UI. Available at https://www.youtube.com/watch?v=HQ_ytw58tC4
 ## Contact
 
-For any inquiries, please reach out to us at [contact@example.com](mailto:contact@example.com).
+For any inquiries, please reach out to us at [contact@example.com](jin_jin_space).
 
-Enjoy exploring cultural heritage with CulturalPulse!
+Enjoy exploring historical heritage with CulturalPulse!
 
 
 
