@@ -21,29 +21,24 @@ The landing page of the application introduces users to its purpose and features
 
 ## Biblography
 
-1. UNESCO UK. (n.d.). World Heritage Sites in the United Kingdom. Available at: https://unesco.org.uk/world-heritage-sites/ .
-2. UNESCO World Heritage Centre. (n.d.). Syndication Service. Available at: https://whc.unesco.org/en/syndication .
-3. Google Cloud. (n.d.). Vision AI | Detecting Landmarks. Available at: https://cloud.google.com/vision/docs/detecting-landmarks .
-4. Flutter. (n.d.). Flutter Documentation. Available at: https://flutter.dev/docs .
-5. World Heritage UK. (n.d.). Intangible Cultural Heritage Ratification by the UK. Available at: https://worldheritageuk.org/articles/latest-news/intangible-cultural-heritage- 
-   ratification-by-the-uk/ .
-6. Android Developers. (n.d.). Run Apps on a Hardware Device. Available at: https://developer.android.com/studio/run/device 
-7. Flutter. (n.d.). Flutter Official Getting Started Guide. Available at: https://flutter.dev/docs/get-started/install
+1. Android Developers. (n.d.). Run Apps on a Hardware Device. Available at: https://developer.android.com/studio/run/device .
+2. Bilibili. (n.d.). How to Connect Android Studio to a Real Android Phone. Available at: https://www.bilibili.com/video/BV1oK4y1r7zo/?spm_id_from=333.337.search-card.all.click .
+3. Bilibili. (n.d.). A Video on Flutter Development. Available at: https://www.bilibili.com/video/BV1KA411q7PY/?spm_id_from=333.788.recommend_more_video.15&vd_source=b1f1c409abffad682ea8b3511998f212 .
+4. Cetools Workshops. (n.d.). CASA0015-Mobile-Systems-Workshop-3. Available at: https://workshops.cetools.org/codelabs/CASA0015-Mobile-Systems-Workshop-3/index.html?index=..%2F..casa0015#5 .
+5. Cetools Workshops. (n.d.). CASA0015-Mobile-Systems-Workshop-1. Available at: https://workshops.cetools.org/codelabs/CASA0015-Mobile-Systems-Workshop-1/#5 .
+6. Flutter. (n.d.). Flutter Documentation. Available at: https://flutter.dev/docs .
+7. Flutter. (n.d.). Flutter Official Getting Started Guide. Available at: https://flutter.dev/docs/get-started/install .
 8. Flutter. (n.d.). Hot Reload. Available at: https://docs.flutter.dev/tools/vs-code .
-9. Bilibili. (n.d.). How to Connect Android Studio to a Real Android Phone. Available at: https://www.bilibili.com/video/BV1oK4y1r7zo/?spm_id_from=333.337.search-card.all.click .
-10. YouTube. (2020). Your First Flutter App Ep 1 - Creating a New Flutter Project from Scratch. Available at: https://www.youtube.com/watch?v=DIn-4nRfkUg .
-11. Cetools Workshops. (n.d.). CASA0015-Mobile-Systems-Workshop-3. Available at: https://workshops.cetools.org/codelabs/CASA0015-Mobile-Systems-Workshop-3/index.html? 
-    index=..%2F..casa0015#5 .
-12. Flutter API. (n.d.). ThemeData.cardColor property. Available at: https://api.flutter.dev/flutter/material/ThemeData/cardColor.html .
-13. Bilibili. (n.d.). A Video on Flutter Development. Available at: https://www.bilibili.com/video/BV1KA411q7PY/? 
-    spm_id_from=333.788.recommend_more_video.15&vd_source=b1f1c409abffad682ea8b3511998f212 .
-14. Flutter. (n.d.). CupertinoOverrideTheme class. Available at: https://api.flutter.dev/flutter/material/ThemeData/cupertinoOverrideTheme.html .
-15. Cetools Workshops. (n.d.). CASA0015-Mobile-Systems-Workshop-1. Available at: https://workshops.cetools.org/codelabs/CASA0015-Mobile-Systems-Workshop-1/#5 .
-16. Mitch Koko. (2023). FULL Flutter Beginner Course. Available at: https://www.youtube.com/watch?v=HQ_ytw58tC4 .<http://google.com>
-17.  Google Developers. (n.d.). Google Maps Platform Documentation. Available at: https://developers.google.com/maps/documentation.
-18. OpenAI: https://www.openai.com/ ChatGPT Website: https://chat.openai.com/ 
-
-  
+9. Flutter API. (n.d.). ThemeData.cardColor property. Available at: https://api.flutter.dev/flutter/material/ThemeData/cardColor.html .
+10. Flutter API. (n.d.). CupertinoOverrideTheme class. Available at: https://api.flutter.dev/flutter/material/ThemeData/cupertinoOverrideTheme.html .
+11. Google Cloud. (n.d.). Vision AI | Detecting Landmarks. Available at: https://cloud.google.com/vision/docs/detecting-landmarks .
+12. Google Developers. (n.d.). Google Maps Platform Documentation. Available at: https://developers.google.com/maps/documentation.
+13. Mitch Koko. (2023). FULL Flutter Beginner Course. Available at: https://www.youtube.com/watch?v=HQ_ytw58tC4 .
+14. OpenAI. (n.d.). ChatGPT. Available at: https://chat.openai.com/ .
+15. UNESCO UK. (n.d.). World Heritage Sites in the United Kingdom. Available at: https://unesco.org.uk/world-heritage-sites/ .
+16. UNESCO World Heritage Centre. (n.d.). Syndication Service. Available at: https://whc.unesco.org/en/syndication .
+17. World Heritage UK. (n.d.). Intangible Cultural Heritage Ratification by the UK. Available at: https://worldheritageuk.org/articles/latest-news/intangible-cultural-heritage-ratification-by-the-uk/ .
+ 
 ----
 
 ## Declaration of Authorship
@@ -53,4 +48,4 @@ I, Yuhua (Annie) Jin, confirm that the work presented in this assessment is my o
 
 Yuhua (Annie) Jin, 
 
-ASSESSMENT DATE
+April 23,2024
