@@ -2,7 +2,7 @@
 
 ![360X360](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/6b627036-209a-4a07-9692-fced887414e6)
 
-### Slogan:Slogan: Pulse the Culture from past, present, and future 
+### Slogan: Pulse the Culture from past, present, and future 
 
 Welcome to CulturalPulse, an innovative mobile application designed to connect you with the UK's vast historical and cultural heritage. With CulturalPulse, embark on a journey to explore historic sites, uncover traditions, and celebrate the rich cultural tapestry recognized by UNESCO.This mobile app is designed to help users discover and engage with the historical heritage in the UK. With interactive features that invite engagement and real-time weather data for each site.
 
