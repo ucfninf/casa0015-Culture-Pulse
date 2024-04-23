@@ -8,7 +8,7 @@ Welcome to CulturalPulse, an innovative mobile application designed to connect y
 
 It’s designed for the curious minds who wish to delve into history with the smart integration of their surroundings, making each visit an informed and interactive experience, no matter where they are.
 
-##About 
+## About 
 Author: Yuhua Jin
 
 Collaboration: Yuhua Jin collaborated with the GPT-3.5 model and GPT-4.0 to create this mobile app.
@@ -22,7 +22,8 @@ Data in the app is retrieved from:
 - **Yuhua:** [GitHub](https://github.com/ucfninf/casa0015-Culture-Pulse)
 
 - **ChatGPT:** [OpenAI](https://www.openai.com/)
-##User Personna
+
+## User Personna
 (![屏幕截图 2024-04-23 033606](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/978fa23f-f325-4430-a15a-8805e57521de))
 (![屏幕截图 2024-04-23 033635](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/56eb15b6-3bc0-4fe1-bc4a-c84662146772))
 
@@ -87,12 +88,38 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 In the development of the CulturalPulse app, I utilized OpenAI's ChatGPT-4.0 and Chat GPT 3.5 to assist with language editing, code debugging, and user interface design suggestions etc.
 
-## References
 
-- [UNESCO UK World Heritage Sites](https://unesco.org.uk/world-heritage-sites/)
-- [UNESCO World Heritage Centre Syndication](https://whc.unesco.org/en/syndication)
-- [Google Landmark Detection API](https://cloud.google.com/vision/docs/detecting-landmarks)
+## API Adptation:
+MAP Navigation:
+ -  Google Map API Key
+
+Weather API:
+http://tianqiapi.com/index/doc 
+
+Data&Information: UNESCO Culture Heritage: (Created local database based on the information from the following websites)
+  https://unesco.org.uk/world-heritage-sites/
+  https://whc.unesco.org/en/syndication  
+
 - [Flutter Documentation](https://flutter.dev/docs)
+
+## Steps to Installing the App
+1. Clone repositroy
+   ```bash
+   git clone https://github.com/pumpkins628/casa0015-AirPuff.git
+2. Enter the code base directory from the command line
+   ```bash
+   cd casa0015-AirPuff
+3. Install all necessary dependencies
+   ```bash
+   flutter pub get
+ 
+ ATTENTION:Make sure you're using the suitable version for flutter (like these)
+   ```
+   Flutter 3.19.4 • channel stable • https://github.com/flutter/flutter.git
+   Framework • revision 2e9cb0aa71 (4 months ago) • 2023-12-11 14:35:13 -0700
+   Engine • revision 54a7145303
+   Tools • Dart 3.2.3 • DevTools 2.28.4
+
 ### References:
 
 - Google Cloud Vision API Documentation. (n.d.). *Detecting Landmarks*. Available at: https://cloud.google.com/vision/docs/detecting-landmarks .
@@ -108,18 +135,6 @@ In the development of the CulturalPulse app, I utilized OpenAI's ChatGPT-4.0 and
 
 - World Heritage UK. (n.d.). *Intangible Cultural Heritage Ratification by the UK*. Available at: https://worldheritageuk.org/articles/latest-news/intangible-cultural-heritage-ratification-by-the-uk/ .
 
-- UNESCO Intangible Cultural Heritage. (n.d.). *Partnering with Youth for the Safeguarding of Intangible Cultural Heritage*. Available at: https://ich.unesco.org/en/news/partnering-with-youth-for-the-safeguarding-of-intangible-cultural-heritage-00011 .
-
-- Bilibili. (n.d.). *How to Connect Android Studio to a Real Android Phone*. Available at: https://www.bilibili.com/video/BV1oK4y1r7zo/?spm_id_from=333.337.search-card.all.click .
-
-- Youtube. (2020).Your First Flutter App Ep 1 - Creating a New Flutter Project from Scratch. https://www.youtube.com/watch?v=DIn-4nRfkUg
-- Workshops. cetools.org (n.d.)CASA0015-Mobile-Systems-Workshop-3 https://workshops.cetools.org/codelabs/CASA0015-Mobile-Systems-Workshop-3/index.html?index=..%2F..casa0015#5
-- https://api.flutter.dev/flutter/material/ThemeData/cardColor.html
-- https://www.bilibili.com/video/BV1KA411q7PY/?spm_id_from=333.788.recommend_more_video.15&vd_source=b1f1c409abffad682ea8b3511998f212
-- card color property (n.d.) https://api.flutter.dev/flutter/material/ThemeData/cardColor.html
-- CupertinoOverideTheme (n.d.)https://api.flutter.dev/flutter/material/ThemeData/cupertinoOverrideTheme.html
-- workshops.cetools.org (n.d.)https://workshops.cetools.org/codelabs/CASA0015-Mobile-Systems-Workshop-1/#5
-- Mitch Koko (2023).  FULL Flutter Beginner Course • Programming Basics / Widgets / Navigation / User Input / UI. Available at https://www.youtube.com/watch?v=HQ_ytw58tC4
 ## Contact
 
 For any inquiries, please reach out to us at [contact@example.com](jin_jin_space).
