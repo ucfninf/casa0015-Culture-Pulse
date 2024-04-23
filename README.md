@@ -106,7 +106,7 @@ Data&Information: UNESCO Culture Heritage: (Created local database based on the 
    git clone https://github.com/pumpkins628/casa0015-AirPuff.git
 2. Enter the code base directory from the command line
    ```bash
-   cd casa0015-AirPuff
+   cd casa0015-Culture_Pulse/culture_pulse_app
 3. Install all necessary dependencies
    ```bash
    flutter pub get
@@ -130,7 +130,7 @@ Data&Information: UNESCO Culture Heritage: (Created local database based on the 
 
 ## Contact
 
-For any inquiries, please reach out to us at [contact@example.com](jin_jin_space).
+For any inquiries, please reach out to us at [yuhua.jin111@gmail.com](jin_jin_space).
 
 Enjoy exploring historical heritage with CulturalPulse!
 
