@@ -9,7 +9,9 @@ Welcome to CulturalPulse, an innovative mobile application designed to connect y
 It’s designed for the curious minds who wish to delve into history with the smart integration of their surroundings, making each visit an informed and interactive experience, no matter where they are.
 
 ## About 
+- Author **Yuhua Jin:** [GitHub](https://github.com/ucfninf/casa0015-Culture-Pulse)
 
+- Assisted with**ChatGPT:** [OpenAI](https://www.openai.com/)
 Collaboration: Yuhua Jin collaborated with the GPT-3.5 model and GPT-4.0 to create this mobile app.
 
 Technology Stack: Written entirely in Dart and developed using Flutter in VScode.
@@ -18,9 +20,6 @@ Data in the app is retrieved from:
 - [UNESCO UK World Heritage Sites](https://unesco.org.uk/world-heritage-sites/)
 - [UNESCO World Heritage Centre Syndication](https://whc.unesco.org/en/syndication)
                   
-- **Yuhua:** [GitHub](https://github.com/ucfninf/casa0015-Culture-Pulse)
-
-- **ChatGPT:** [OpenAI](https://www.openai.com/)
 
 ## User Personna
 ![屏幕截图 2024-04-23 033606](https://github.com/ucfninf/casa0015-Culture-Pulse/assets/146268411/978fa23f-f325-4430-a15a-8805e57521de)
@@ -35,16 +34,17 @@ Data in the app is retrieved from:
 
 **Interactive Mapping**: Navigate effortlessly through a detailed map enriched with heritage sites and landmarks.
 
-**Cultural Discovery**: Access a curated selection of UK's intangible cultural heritage, each with detailed descriptions and multimedia presentations.
+**experience Discovery**: Access a curated selection of UK's historical heritages accredited by UNESCO, each with detailed descriptions and multimedia descrpitions.
 
 **Personalized Itineraries**: Save your favorite locations and plan your visits with custom itineraries.
 
-**Live Weather Data**: Get real-time weather updates for each heritage site to plan your visits accordingly.
+**Weather Data**: Get real-time weather updates for each heritage site to plan your visits accordingly.
 
-**UNESCO-Certified Information**: Trust in the authenticity of content sourced directly from the official UNESCO website.
+**UNESCO-Certified Information**: Trust in the authenticity of content sourced directly from the official UNESCO world heritage website.
 
 
-### Mobile app Video: https://youtu.be/S5gbCyZiuj8 
+### Mobile app Video: 
+#### https://youtu.be/S5gbCyZiuj8 
 
 
 ## Getting Started
@@ -94,7 +94,7 @@ MAP Navigation:
 Weather API:
 http://tianqiapi.com/index/doc 
 
-Data&Information: UNESCO Culture Heritage: (Created local database based on the information from the following websites)
+customized database Information: UNESCO Culture Heritage: (Created local database based on the information from the following websites)
   https://unesco.org.uk/world-heritage-sites/
   https://whc.unesco.org/en/syndication  
 
